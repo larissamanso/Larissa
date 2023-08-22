@@ -15,7 +15,7 @@ let mensagem = texto1 + "" + texto2;
 console.log(mensagem); //Resultado: "Olá mundo"
 
 var numero = 2;
-let larissa = texto1 + "" + texto2 + "" + numero;
-console.log(larissa); //Resultado: "Olá mundo"
+mensagem = texto1 + "" + texto2 + "" + numero;
+console.log(mensagem); //Resultado: "Olá mundo"
 
  
