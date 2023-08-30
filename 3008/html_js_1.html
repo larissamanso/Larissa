@@ -8,21 +8,18 @@
     <body>
         <h1>Exemplo de vetor</h1>
         <p id="teste1">Conteúdo do vetor 1: </p>
-        <p id="teste2">Conteúdo do vetor 2: </p>
-        <p id="teste3">Segunda posição do vetor 1: </p>
-        <p id="teste4">Terceira posição do vetor 2: </p>
+        
 
         <script type="text/Javascript">
-            let frutas = ['maçã', 'banana', 'laranja'];
-            let firstFruit = frutas[0];
-            frutas[1] = 'uva';
-            console.log(frutas[1])
-            console.log(frutas[2])
+            let animais = ['cachorro', 'gato', 'elefante'];
+            animais.push('leão');
+            console.log(animais)
+            
+            console.log(animais)
 
-            document.getElementById('teste1').innerHTML += frutas ;
-            document.getElementById('teste2').innerHTML += firstFruit;
-            document.getElementById('teste3').innerHTML += frutas[1];
-            document.getElementById('teste4').innerHTML += firstFruit[2];
+            document.getElementById('teste1').innerHTML += animais ;
+           
+           
         </script>
     </body>
 </html>
