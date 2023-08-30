@@ -7,23 +7,27 @@
    <body>
     <h1>Métodos de Strings</h1>
     <p id="teste1"></p>
+    <p id="teste2"></p>
+    <p id="teste3"></p>
+    <p id="teste4"></p>
     
 
     <script type="text/Javascript">
-        let texto = 'Olá, mundo!';
+        let frase = '   Espaços em branco   ';
 
-        let tamanho = texto.length;
-        console.log(tamanho);
+        let textoLimpo = frase.trim();
+        console.log(textoLimpo);
 
-        let primeiroCaractere = texto[0];
-        console.log(primeiroCaractere);
+        let comecaCom = frase.startsWith('Espaços');
+        console.log(comecaCom);
 
-        let texto1 = 'Olá, ,mundo!';
+        let terminaCom = frase.endsWith('branco');
+        console.log(terminaCom);
 
-        let posicao = texto1.indexOf('mundo');
-        console.log(posicao);
-
-        document.getElementById('teste1').innerHTML += texto;
+        document.getElementById('teste1').innerHTML += frase;
+        document.getElementById('teste2').innerHTML += textoLimpo;
+        document.getElementById('teste3').innerHTML += comecaCom;
+        document.getElementById('teste4').innerHTML += terminaCom;
         
     </script>
    </body>
