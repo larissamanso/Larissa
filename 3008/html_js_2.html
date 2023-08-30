@@ -7,21 +7,22 @@
    <body>
     <h1>Métodos de Strings</h1>
     <p id="teste1"></p>
+    <p id="teste2"></p>
+    <p id="teste3"></p>
     
     
 
     <script type="text/Javascript">
-        let nome = 'João';
+        let texto = 'Texto para conversão';
 
-        let sobrenome = 'Silva';
+        let maiusculas = texto.toUpperCase();
         
-        let nomeCompleto = nome + ' ' + sobrenome;
-        console.log(nomeCompleto);
+        let minusculas = texto.toLowerCase();
+        console.log(minusculas);
 
-        let mensagem = `Olá, ${nome} ${sobrenome}!`;
-        console.log(mensagem);
-
-        document.getElementById('teste1').innerHTML += mensagem;
+        document.getElementById('teste1').innerHTML += texto;
+        document.getElementById('teste2').innerHTML += maiusculas;
+        document.getElementById('teste3').innerHTML += minusculas;
        
     </script>
    </body>
