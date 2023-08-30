@@ -13,13 +13,16 @@
         <p id="teste4">Terceira posição do vetor 2: </p>
 
         <script type="text/Javascript">
-            var cores1 = ['Verde', 'Amarelo', 'Azul', 'Branco'];
-            var cores2 = new Array('Laranja', 'Vermelho', 'Preto', 'Cinza');
+            let frutas = ['maçã', 'banana', 'laranja'];
+            let firstFruit = frutas[0];
+            frutas[1] = 'uva';
+            console.log(frutas[1])
+            console.log(frutas[2])
 
-            document.getElementById('teste1').innerHTML += cores1;
-            document.getElementById('teste2').innerHTML += cores2;
-            document.getElementById('teste3').innerHTML += cores1[1];
-            document.getElementById('teste4').innerHTML += cores2[2];
+            document.getElementById('teste1').innerHTML += frutas ;
+            document.getElementById('teste2').innerHTML += firstFruit;
+            document.getElementById('teste3').innerHTML += frutas[1];
+            document.getElementById('teste4').innerHTML += firstFruit[2];
         </script>
     </body>
 </html>
