@@ -10,14 +10,17 @@
 
         <script type="text/JavaScript">
             
-            let contador = 1;
+            let soma = 0;
+            let i = 1;
 
-            while (contador <= 5) {
-           console.log(contador);
-           contador++;     
+            while (i <= 5) {
+                soma += i;
+                i++;
             }
+           console.log("A soma dos números de 1 a 5 é: " + soma);     
+            
 
-            document.getElementById('teste1').innerHTML += contador;
+            document.getElementById('teste1').innerHTML += soma;
 
         </script>
     </body>
