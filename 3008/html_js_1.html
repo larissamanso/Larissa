@@ -8,15 +8,19 @@
     <body>
         <h1>Exemplo de vetor</h1>
         <p id="teste1">Conteúdo do vetor 1: </p>
+        <p id="teste2">Conteúdo do vetor 2:</p>
        
 
         <script type="text/Javascript">
-            let cor = ['Vermelho', 'Verde', 'Azul'];
-            
-        cor.forEach(function(cor) {
-            console.log(cor);
-        });
-            document.getElementById('teste1').innerHTML += cor;
+            let numeros = [1, 2, 3];
+            let dobro = numeros.map(function(number) {
+                return number * 2;
+            })
+        
+            console.log(dobro);
+        
+            document.getElementById('teste1').innerHTML += numeros;
+            document.getElementById('teste2').innerHTML += dobro;
            
            
         </script>
