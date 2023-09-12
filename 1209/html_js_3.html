@@ -7,14 +7,14 @@
         <div id="data-hora"></div>
 
         <script>
-            function atualizarDataHota() {
+            function atualizarDataHora() {
                 const agora = new Date();
                 const dataHoraElement = document.getElementById('data-hora');
                 dataHoraElement.textContent = `Data e hora atual: 
-                ${agora.toLocaleDateString()}`;
+                ${agora.toLocaleString()}`;
             }
-            atualizarDataHota();
-            setInterval(atualizarDataHota, 1000);
+            atualizarDataHora();
+            setInterval(atualizarDataHora, 1000);
         </script>
     </body>
 </html>
