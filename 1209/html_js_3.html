@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Atualização de Data e Hora</title>
+    </head>
+    <body>
+        <div id="data-hora"></div>
+
+        <script>
+            function atualizarDataHota() {
+                const agora = new Date();
+                const dataHoraElement = document.getElementById('data-hora');
+                dataHoraElement.textContent = `Data e hora atual: 
+                ${agora.toLocaleDateString()}`;
+            }
+            atualizarDataHota();
+            setInterval(atualizarDataHota, 1000);
+        </script>
+    </body>
+</html>
