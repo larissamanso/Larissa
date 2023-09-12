@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+        <meta name="viewport" content="widht=device-width, initial-scale=1">
+        <title>Larissa Manço</title>
+
+        <style>
+            body{
+               background-color: rgb(248, 190, 231); text-align: center;
+            }
+            div{
+                color:#91085e;
+
+            }
+
+            h1{
+                color:#91085e;
+            }
+
+            p{
+                color:#91085e;
+            }
+
+            img{
+                width: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Larissa Manço</h1>
+
+        <div id="data-hora"></div>
+        <p id="texto"></p>
+        <img alt ="sla" src="https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/bltb4cb0d8c92af72af/633f333337f1e80ff8ce1686/GettyImages-1243553711.jpg?auto=webp&format=pjpg&width=3840&quality=60">
+        <img alt ="sla" src="https://www.socialbauru.com.br/wp-content/uploads/2021/07/bauruzinho-estatua-reproducao.jpg">
+        <script type = "text/javascript">
+
+            function atualizarDataHora() {
+                const agora = new Date();
+                const dataHoraElement = document.getElementById('data-hora');
+                dataHoraElement.textContent = `Data e hora atual:
+                ${agora.toLocaleString()}`;
+            }
+
+            atualizarDataHora();
+            setInterval(atualizarDataHora, 1000);
+
+        document.getElementById('texto').innerHTML = 'Bauru 1000 graus';
+        </script>
+    </body>
+</html>
