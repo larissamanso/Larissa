@@ -32,8 +32,20 @@
 
         <div id="data-hora"></div>
         <p id="texto"></p>
-        <img alt ="sla" src="https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/bltb4cb0d8c92af72af/633f333337f1e80ff8ce1686/GettyImages-1243553711.jpg?auto=webp&format=pjpg&width=3840&quality=60">
+       
         <img alt ="sla" src="https://www.socialbauru.com.br/wp-content/uploads/2021/07/bauruzinho-estatua-reproducao.jpg">
+
+        <a onmouseover="mudar('lampada', 'https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/bltb4cb0d8c92af72af/633f333337f1e80ff8ce1686/GettyImages-1243553711.jpg?auto=webp&format=pjpg&width=3840&quality=60')"
+        onmouseout="mudar('lampada', 'https://www.socialbauru.com.br/wp-content/uploads/2021/07/bauruzinho-estatua-reproducao.jpg')">
+        <img src="https://www.socialbauru.com.br/wp-content/uploads/2021/07/bauruzinho-estatua-reproducao.jpg" border="0" id="lampada">
+    </a>
+
+
+
+
+
+
+
         <script type = "text/javascript">
 
             function atualizarDataHora() {
@@ -47,6 +59,11 @@
             setInterval(atualizarDataHora, 1000);
 
         document.getElementById('texto').innerHTML = 'Bauru 1000 graus';
+            function mudar(objeto, imagem) {
+                lampada.src = imagem;
+            }
+
+
         </script>
     </body>
 </html>
