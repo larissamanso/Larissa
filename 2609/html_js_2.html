@@ -21,6 +21,25 @@
         <button type="button"
         onclick="document.getElementById('teste4').innerHTML += Div(num1, num2);">Divisão</button>
 
-        <script src="03-funcao-com-parametros.js"></script>
+        <script src="03-funcao-com-parametros.js">
+            function Soma(a, b){
+                return a + b;
+            }
+
+            function Sub(a, b){
+                return a - b;
+            }
+
+            function Mult(a, b){
+                return a * b;
+            }
+
+            function Div(a, b){
+                return a / b;
+            }
+
+            num1 = parseInt(prompt('Digite um Número', ''));
+            num2 = parseInt(prompt('Digite outro Número', ''));
+        </script>
     </body>
 </html>
