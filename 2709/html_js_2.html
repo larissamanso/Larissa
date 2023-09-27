@@ -1,0 +1,32 @@
+<!DOCTYPE html>>
+<html>
+    <head>
+        <title>Exemplo de DOM</title>
+    </head>
+    <body>
+        <h1>Meu Título</h1>
+        <p id="meuParagrafo">Parágrafo.</p>
+        <button id="meuBotao">Clique em mim</button>
+        <button id="resetBotao">Resetar</button>
+
+        <script>
+            var titulo = document.querySelector("h1");
+            var paragrafo = document.getElementById("meuParagrafo");
+            var botao = document.getElementById("meuBotao");
+            var resetBotao = document.getElementById("resetBotao");
+
+            var textoOriginal = paragrafo.innerHTML;
+
+            titulo.innerHTML = "Novo Titulo";
+            paragrafo.style.color = "blue";
+
+           botao.addEventListener("click", function() {
+            paragrafo.innerHTML = "Texto alterado pelo clique!";
+           });
+           
+           resetBotao.addEventListener("click", function(){
+            paragrafo.innerHTML = textoOriginal;
+           });
+        </script>
+    </body>
+</html>
