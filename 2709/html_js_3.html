@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Exemplo de DOM</title>
+        <style type="text/css">
+            .primeira{
+                border: 1px solid #CCC;
+                padding: 10px;
+                background-color: #f5d;
+                color: #333;
+                width: 500px;
+            }
+            .segunda{
+                background-color: aqua;
+                border: 5px solid #F90;
+                font-family: Georgia, serif;
+                font-size: 12px;
+                width: 200px;
+                padding: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Exemplo de como alterar classes de CSS</h1>
+        <p><a href="javascript:chamaDOM('texto');"></a></p>
+        <p id="texto" class="primeira">Lorem ipsum dolor sit amet, consectutar adipisicing elit, sed do elusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comodo
+            consequant. Duls aute irure dolor in reprehenderit in voluptate velit esse
+            cillun dolore eu fugiat pariatu. Exepteur sint eccaecat 
+            cupidatat nom proident, sunt in culpa qul officia deserut mollit aniid est laborum.</p>
+        <script type="text/javascript">
+            function chamaDOM(id) {
+                var elemento = '';
+
+                elemento = document.getElementById(id);
+                if(elemento.className == 'primeira') {
+                    elemento.className = 'segunda';
+                }
+                else{
+                    elemento.className = 'primeira';
+                }
+            }
+        </script>
+    </body>
+</html>
